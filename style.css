@@ -1,0 +1,117 @@
+#hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background{
+    background-color: #EEEEEE; 
+}
+.background-dark{
+    background-color: #201E43;
+}
+.underline{
+    text-decoration: underline;
+}
+/* work  */
+#projects{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#projects-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.project{
+    font-size: 20px;
+    border-radius: 20px;
+    width: 30%;
+    overflow: hidden;
+    height: 250px;
+}
+.project-name{
+    width: 100%;
+    height: 60px;
+    background-color: #EEEEEE;
+    padding: 15px;
+}
+.project-name a{
+    text-decoration: none;
+    color: #201E43;
+}
+.project-name a:before{
+    content: "<";
+    color: #201E43;
+    opacity: 0;
+    margin-right: 5px;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+.project-name a:after{
+    content: "/>";
+    color: #201E43;
+    opacity: 0;
+    margin-left: 5px;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+.project-name a:hover::before, .project-name a:hover::after{
+    opacity: 1;
+}
+.project-name a:visited{
+    color: #201E43;
+}
+.project img{
+    width: 100%;
+    /* height: 139.94px; */
+}
+#show-projects{
+    background-color: #EEEEEE;
+    color: #201E43;
+    outline: #201E43;
+    padding: 13px;
+    margin-top: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#show-projects a{
+    text-decoration: none;
+    color: #3c3333;
+}
+#show-projects:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 760px) {
+    #projects-div{
+        flex-direction: column;
+        align-content: center;
+    }
+    /* #project-title{
+        font-size: 30px;
+    } */
+    .project{
+        width: 80%;
+        overflow: hidden;
+        height: 250px;
+        margin-bottom: 20px;
+
+    }
+    .project-name{
+        height: 50px;
+        padding: 10px;
+    }
+    #show-projects{
+        padding: 8px;
+        margin-top: 28px;
+        font-size: 18px;
+    }
+    #skills-div{
+        width: 60%;
+        padding:10px 35px;
+        font-size: 18px;
+    }
+}

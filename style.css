@@ -13,6 +13,13 @@
 .underline{
     text-decoration: underline;
 }
+
+/* navbar */
+
+#navbarSupportedContent a:hover{
+    text-decoration: underline;
+}
+
 /* work  */
 #projects{
     text-align: center;

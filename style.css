@@ -38,6 +38,7 @@
     width: 30%;
     overflow: hidden;
     height: 250px;
+    margin-top: 10px;
 }
 .project-name{
     width: 100%;

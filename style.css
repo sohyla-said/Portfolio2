@@ -130,19 +130,30 @@
         flex-direction: column;
         align-content: center;
     }
-    /* #project-title{
-        font-size: 30px;
-    } */
     .project{
-        width: 80%;
+        width: 90%;
         overflow: hidden;
-        height: 250px;
         margin-bottom: 20px;
-
+        padding: 16px;
+        font-size: 16px;
+        min-height: unset;
+        height: auto;
     }
     .project-name{
-        height: 50px;
+        height: auto;
         padding: 10px;
+    }
+    .project-desc {
+        font-size: 1rem;
+        margin-top: 12px;
+        padding: 0 8px;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.5;
+    }
+    .project img {
+        height: 160px;
+        margin: 12px 0;
     }
     #show-projects{
         padding: 8px;
@@ -155,4 +166,3 @@
         font-size: 18px;
     }
 }
-

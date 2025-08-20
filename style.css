@@ -125,6 +125,39 @@
     transform: scale(1.2);
 }
 
+/* Modern Resume Section Cards */
+.about-card, .education-card, .skills-card {
+    background: linear-gradient(135deg, #f8f9fa 80%, #e9ecef 100%);
+    border-radius: 18px;
+    transition: box-shadow 0.2s;
+}
+
+.about-card:hover, .education-card:hover, .skills-card:hover {
+    box-shadow: 0 8px 32px rgba(32, 30, 67, 0.16);
+}
+
+.card-title.underline {
+    /* border-bottom: 2px solid #201E43; */
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+}
+
+.card-body {
+    padding: 2rem 1.5rem;
+}
+
+.skills-card .progress-bar {
+    border-radius: 8px;
+}
+
+.skills-card .progress {
+    background-color: #e0e0e0;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+
 @media (max-width: 760px) {
     #projects-div{
         flex-direction: column;
@@ -164,5 +197,11 @@
         width: 60%;
         padding:10px 35px;
         font-size: 18px;
+    }
+    .card-body {
+        padding: 1.2rem 0.8rem;
+    }
+    .card-title.underline {
+        font-size: 1.3rem;
     }
 }

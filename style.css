@@ -15,43 +15,35 @@
 }
 
 /* navbar */
-
 #navbarSupportedContent a:hover{
     text-decoration: underline;
 }
 
 /* work  */
+#projects-content .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
 #projects{
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-#projects-div{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-/* .project{
-    font-size: 20px;
-    border-radius: 20px;
-    width: 30%;
-    overflow: hidden;
-    height: 300px;
-    margin-top: 10px;
-    background-color: #EEEEEE;
-} */
- .project {
+.project {
     background: #f8f9fa;
+    font-size: 18px;
     border-radius: 16px;
-    width: 30%;
     box-shadow: 0 4px 16px rgba(32, 30, 67, 0.08);
     padding: 24px;
     margin-bottom: 32px;
     text-align: center;
+    width: 320px;
     transition: box-shadow 0.2s;
-    font-size: 18px;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project:hover {
@@ -102,7 +94,7 @@
 .project img {
     width: 100%;
     max-width: 100%;
-    height: 200px;           /* Increased height for clarity */
+    height: 180px;           /* Increased height for clarity */
     object-fit: cover;       /* Use 'contain' if you want no cropping */
     border-radius: 10px;
     margin: 16px 0;
@@ -147,21 +139,10 @@
     padding: 2rem 1.5rem;
 }
 
-.skills-card .progress-bar {
-    border-radius: 8px;
-}
-
-.skills-card .progress {
-    background-color: #e0e0e0;
-    margin-top: 4px;
-    margin-bottom: 8px;
-}
-
-
 @media (max-width: 760px) {
-    #projects-div{
+    #projects-content .project-list {
         flex-direction: column;
-        align-content: center;
+        align-items: center;
     }
     .project{
         width: 90%;

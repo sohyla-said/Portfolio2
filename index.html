@@ -3,329 +3,591 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sohyla Said</title>
+    <title>Sohyla Saeed - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-    
 <body>
-    
-    <section id="navbar">
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary text-primary-emphasis">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="">
-                    <img src="Images/girl_developer.png" alt="Logo" width="80" class="d-inline-block align-text-center">
-                    Sohyla Said
-                  </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#hero">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#resume">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#projects">Work</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Sohyla<span>Saeed</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-          </nav>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 class="hero-title">Sohyla Saeed Abdelrahim</h1>
+                <div class="typewriter">
+                    <h2 class="hero-subtitle">I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+                </div>
+                <p class="hero-description">Computer Science student passionate about transforming data into actionable insights and building intelligent applications that solve complex problems.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </section>
-    <section id="hero">
-        <div class="container background">
-            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg" style="color: #201E43;">
-              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                <h1 class="display-4 fw-bold lh-1 text-primary-emphasis">Hi, I am Sohyla Said.</h1>
-                <p class="lead text-primary-emphasis">Computer Science student.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                  <button type="button" class="btn btn-outline-secondary btn-lg px-4"><a href="#contact" style="text-decoration: none; color: #201E43;" id="letswork">Let's work together.</a></button>
-                  <div class="col d-flex align-items-start col-lg-2">
-                    <div>
-                      <a href="Sohyla_Saeed_CV.pdf" target="_blank" class="btn btn-outline-secondary btn-lg w-100" style="min-width: 180px; text-decoration: none; color: #201E43;">
-                        Get my CV
-                      </a>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="education-card card">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="education-item">
+                            <h4>Bachelor's Degree in Computer Science</h4>
+                            <p class="institution">Faculty of Computers and Artificial Intelligence, Cairo University</p>
+                            <p class="details">Cumulative GPA: 3.91 / 4.00 (2022 – 2026)</p>
+                        </div>
                     </div>
+                    
+                    <div class="summary-card card">
+                        <h3><i class="fas fa-user"></i> Professional Summary</h3>
+                        <p>Analytical and results-driven professional with expertise in both <strong>Data Science</strong> and <strong>Software Engineering</strong>. Passionate about transforming data into actionable insights and building efficient, intelligent applications that solve complex business problems.</p>
+                        
+                        <div class="background-tabs">
+                            <button class="tab-btn active" data-tab="data-science">Data Science</button>
+                            <button class="tab-btn" data-tab="software">Software Engineering</button>
+                            <button class="tab-btn" data-tab="fullstack">Full Stack</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="data-science">
+                            <p>Skilled in Machine Learning, Data Analysis, and NLP with experience in building, training, and evaluating ML models. Proven ability to deliver data-driven solutions that improve accuracy and efficiency by measurable margins.</p>
+                        </div>
+                        <div class="tab-content" id="software">
+                            <p>Expertise in backend development, creating scalable systems and intelligent applications. Strong foundation in scalable system design and data science principles.</p>
+                        </div>
+                        <div class="tab-content" id="fullstack">
+                            <p>Proficient in full-stack development using Django, HTML, CSS, and JavaScript. Experience in building complete web applications with both frontend and backend components.</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-card card">
+                      <h3><i class="fas fa-file-download"></i> Download My CV</h3>
+                      <p>Download my resumes tailored for different roles.</p>
+                      <div class="cv-buttons-simple">
+                          <a href="Sohyla_Saeed_DS_Resume.pdf" download class="cv-link">
+                              <i class="fas fa-chart-line"></i>
+                              <span>Data Science CV</span>
+                              <small>PDF</small>
+                          </a>
+                          <a href="Sohyla_Saeed_SW_Resume.pdf" download class="cv-link">
+                              <i class="fas fa-code"></i>
+                              <span>Software Engineer CV</span>
+                              <small>PDF</small>
+                          </a>
+                          <a href="Sohyla_Saeed_CV.pdf" download class="cv-link">
+                              <i class="fas fa-layer-group"></i>
+                              <span>Full Stack CV</span>
+                              <small>PDF</small>
+                          </a>
+                      </div>
                   </div>
                 </div>
-              </div>
-              <!-- <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                  <img class="rounded-lg-3" src="Images/Me2.jpg" alt="girl_developer" width="200">
-              </div> -->
+                
+                <div class="about-stats">
+                    <div class="stats-card card">
+                        <h3><i class="fas fa-chart-line"></i> Quick Stats</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-value">3.91</div>
+                                <div class="stat-label">GPA</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">10+</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">98%</div>
+                                <div class="stat-label">Best Accuracy</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">5</div>
+                                <div class="stat-label">Certifications</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card card">
+                        <h3><i class="fas fa-address-card"></i> Contact Info</h3>
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> +20 111 566 6637</p>
+                            <p><i class="fas fa-envelope"></i> sohylasaid2004@gmail.com</p>
+                            <div class="social-links">
+                                <a href="https://sohyla-said.github.io/Portfolio2" target="_blank" title="Portfolio"><i class="fas fa-globe"></i></a>
+                                <a href="https://www.linkedin.com/in/sohyla-saeed" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/sohyla-said" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="extracurricular-card card">
+                        <h3><i class="fas fa-users"></i> Extracurricular</h3>
+                        <ul>
+                            <li>Google Developer Student Club (GDSC) – UI/UX Committee Member</li>
+                            <li>Microsoft Student Partner Tech Club (MSP) (Feb 2024 – July 2024)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
     </section>
-    <section id="resume">
-      <div class="container py-4 text-primary-emphasis">
-        <header class="pb-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center text-primary-emphasis text-decoration-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-file-person-fill" viewBox="0 0 16 16">
-              <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11"/>
-            </svg>
-            <span class="fs-4 ms-2">Introduction</span>
-          </a>
-        </header>
 
-        <div class="row g-4">
-          <!-- About Me Card -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0 about-card">
-              <div class="card-body">
-                <h2 class="card-title fw-bold underline mb-3">About Me</h2>
-                <p class="card-text fs-5">Computer Science student with a strong foundation in building robust, <b>full-stack applications</b>, now focused on applying those skills to design and deploy scalable <b>data pipelines and machine learning models</b>. Passionate about leveraging engineering principles to solve complex data problems and deliver data-driven products.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Education Card -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0 education-card">
-              <div class="card-body">
-                <h2 class="card-title fw-bold underline mb-3">Education</h2>
-                <h5 class="mb-2">College:</h5>
-                <p class="mb-3">Faculty of Computers and Artificial Intelligence, Cairo University.</p>
-                <h5 class="mb-2">Courses:</h5>
-                <ul class="list-unstyled mb-0">
-                  <li>•	Oracle Database 19c Administration Workshop - <i>e& Egypt</i></li>
-                  <li>•	SQL Fundamentals Track - <i>DataCamp</i></li>
-                  <li>•	Associate Data Analyst in SQL - <i>DataCamp</i></li>
-                  <li>•	Responsive Web Design - <i>FreeCodeCamp</i></li>
-                  <li>•	The Complete 2024 Web Development Bootcamp - <i>Udemy</i></li>
-                  <li>•	Fundamentals of Backend Engineering - <i>Udemy</i></li>
-                  <li>•	GitHub Foundations - <i>DataCamp</i></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Skills Card -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0 skills-card">
-              <div class="card-body">
-                <h2 class="card-title fw-bold underline mb-3">Skills</h2>
-                <div class="skills-labels d-flex flex-wrap gap-2">
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">C++</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Python</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Pandas</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Matplotlib</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Scikit Learn</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">JavaScript</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Java</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">PHP</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Django</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Springboot</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Laravel</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">NLP</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Machine Learning</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">OOP</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Data Structures</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Algorithms</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">SQL</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">MySQL</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Database Administration</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">HTML</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">CSS</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Bootstrap</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">Git</span>
-                  <span class="badge rounded-pill bg-secondary text-light fs-6 px-3 py-2">GitHub</span>
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Libraries & Frameworks</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">NLTK</span>
+                        <span class="skill-tag">spaCy</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Laravel</span>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-database"></i> Databases & Tools</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Oracle 19c</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-brain"></i> Concepts</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Feature Engineering</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Database Administration</span>
+                    </div>
+                </div>
             </div>
-          </div>
+            
+            <div class="soft-skills">
+                <h3><i class="fas fa-user-friends"></i> Soft Skills</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Problem Solving</h4>
+                    </div>
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Collaboration</h4>
+                    </div>
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Time Management</h4>
+                    </div>
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4>Adaptability</h4>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-    <section id="projects">
-      <div class="container">
-        <header class="pb-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center text-primary-emphasis text-decoration-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-projector" viewBox="0 0 16 16">
-              <path d="M14 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M2.5 6a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
-              <path d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2 1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1H5a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1 2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1z"/>
-            </svg>
-            <span class="fs-4 ms-2">Projects</span>
-          </a>
-        </header>
-        <div class="mb-4 d-flex flex-wrap gap-2 justify-content-center" id="project-category-buttons">
-          <button class="btn btn-outline-secondary active" data-category="fullstack">Full Stack</button>
-          <button class="btn btn-outline-secondary" data-category="backend">Backend</button>
-          <button class="btn btn-outline-secondary" data-category="data">Data Science / Analysis</button>
-          <button class="btn btn-outline-secondary" data-category="frontend">Front-End</button>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Certifications</h2>
+            <div class="experience-content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul 2025 – Aug 2025</div>
+                        <div class="timeline-content card">
+                            <h3>Data Science Trainee</h3>
+                            <p class="company">Digital Egyptian Pioneers Initiative (IBM Curriculum)</p>
+                            <ul>
+                                <li>Analyzed and preprocessed large real-world datasets using Pandas and NumPy</li>
+                                <li>Created visualizations and dashboards with Matplotlib, Seaborn, and Streamlit</li>
+                                <li>Built, trained, and evaluated supervised and unsupervised ML models using Scikit-learn</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Aug 2025 – Sept 2025</div>
+                        <div class="timeline-content card">
+                            <h3>Database Administration Intern</h3>
+                            <p class="company">e& Egypt</p>
+                            <ul>
+                                <li>Gained hands-on knowledge in Oracle Database Administration and Architecture</li>
+                                <li>Completed Oracle Database 19c Administration Workshop</li>
+                                <li>Performed practical tasks: database creation, user management, backup, and recovery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <div class="certifications-grid">
+                        <div class="certification-card card">
+                            <h4>Associate Data Analyst in SQL</h4>
+                            <p class="issuer">DataCamp</p>
+                        </div>
+                        <div class="certification-card card">
+                            <h4>GitHub Foundations</h4>
+                            <p class="issuer">DataCamp</p>
+                        </div>
+                        <div class="certification-card card">
+                            <h4>Natural Language Processing in Python</h4>
+                            <p class="issuer">DataCamp</p>
+                        </div>
+                        <div class="certification-card card">
+                            <h4>Oracle Database 19c Administration Workshop</h4>
+                            <p class="issuer">e& Egypt</p>
+                        </div>
+                        <div class="certification-card card">
+                            <h4>The Complete 2024 Web Development Bootcamp</h4>
+                            <p class="issuer">Udemy</p>
+                        </div>
+                        <div class="certification-card card">
+                            <h4>Fundamentals of Backend Engineering</h4>
+                            <p class="issuer">Udemy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="projects-content">
-          <!-- Full Stack Projects (default) -->
-          <div class="project-list" data-category="fullstack">
-            <div class="project">
-              <div class="project-name"><a href="https://github.com/sohyla-said/Event-Booking-System" target="_blank">Event Booking System</a></div>
-              <img src="Images/EventBooking.png" alt="Event-Booking-System">
-              <div class="project-desc">Developed a platform for event browsing, booking, and management with admin dashboard functionality.</div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="data-science">Data Science</button>
+                <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                <button class="filter-btn" data-filter="web-dev">Web Development</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
             </div>
-            <div class="project">
-              <div class="project-name"><a href="https://github.com/sohyla-said/Job_Search_Web-project" target="_blank">Job Search Web app</a></div>
-              <img src="Images/job_search_project.png" alt="Job_Search_Web-project">
-              <div class="project-desc">Built a job portal with authentication, job postings, and admin tools for content moderation.</div>
+            
+            <div class="projects-grid">
+                <!-- Data Science Projects -->
+                <div class="project-card card" data-category="data-science">
+                    <div class="project-header">
+                        <h3>Sales Forecasting and Optimization</h3>
+                        <span class="project-tag">Team Project</span>
+                    </div>
+                    <p class="project-description">Forecasted weekly sales for retail stores using time-series models XGBoost, LightGBM, LSTM, achieving 98% accuracy.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>XGBoost</span>
+                        <span>LSTM</span>
+                        <span>EDA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sohyla-said/Sales_Forecasting_and_Optimization_GP" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Machine Learning Projects -->
+                <div class="project-card card" data-category="machine-learning">
+                    <div class="project-header">
+                        <h3>Material Stream Identification System</h3>
+                        <span class="project-tag">Machine Learning</span>
+                    </div>
+                    <p class="project-description">Developed an Automated Material Stream Identification System using ML techniques, achieving 89% accuracy with SVM.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>SVM</span>
+                        <span>Data Augmentation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sohyla-said/Material-Stream-Identification-System" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card card" data-category="machine-learning">
+                    <div class="project-header">
+                        <h3>SMS Spam Classifier</h3>
+                        <span class="project-tag">NLP</span>
+                    </div>
+                    <p class="project-description">Developed an NLP pipeline and ML model achieving 98% accuracy in classifying SMS messages as spam or ham.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>Machine Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sohyla-said/SMS-Spam-Classifier" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card card" data-category="machine-learning">
+                    <div class="project-header">
+                        <h3>IMDB Movie Review Sentiment Analysis</h3>
+                        <span class="project-tag">Deep Learning</span>
+                    </div>
+                    <p class="project-description">Implemented sentiment classifier achieving 88% test accuracy on IMDB dataset. Preprocessed 50K reviews with NLTK.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Deep Learning</span>
+                        <span>NLTK</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sohyla-said/IMDB-Movies-Reviews-Sentiment-Analysis" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Web Development Projects -->
+                <div class="project-card card" data-category="web-dev">
+                    <div class="project-header">
+                        <h3>Quiz Management System</h3>
+                        <span class="project-tag">Full Stack</span>
+                    </div>
+                    <p class="project-description">Developed a full-stack web application using Django, HTML, CSS, JS, and DRF enabling teachers to create timed quizzes.</p>
+                    <div class="project-tech">
+                        <span>Django</span>
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>DRF</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sohyla-said/Quiz-app" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Backend Projects -->
+                <div class="project-card card" data-category="backend">
+                    <div class="project-header">
+                        <h3>Learning Management System</h3>
+                        <span class="project-tag">Backend</span>
+                    </div>
+                    <p class="project-description">Collaborated with a team of 5 to develop core backend services for an educational platform using Java Spring Boot.</p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>REST API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Salmamohamedd/lms" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card card" data-category="backend">
+                    <div class="project-header">
+                        <h3>Smart Appointment Booking System</h3>
+                        <span class="project-tag">Backend</span>
+                    </div>
+                    <p class="project-description">Developed a Spring Boot and SQL backend for an intelligent scheduling system that optimizes appointment booking.</p>
+                    <div class="project-tech">
+                        <span>Spring Boot</span>
+                        <span>SQL</span>
+                        <span>Real-time Data</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sohyla-said/Appointment-Booking-Backend-system" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card card" data-category="web-dev">
+                    <div class="project-header">
+                        <h3>Event Booking System</h3>
+                        <span class="project-tag">Full Stack</span>
+                    </div>
+                    <p class="project-description">Built a full-stack web app for browsing, booking, and managing events with an integrated admin panel.</p>
+                    <div class="project-tech">
+                        <span>Django</span>
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sohyla-said/Event-Booking-System" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card card" data-category="data-science">
+                    <div class="project-header">
+                        <h3>Music Store Data Analysis</h3>
+                        <span class="project-tag">Data Analysis</span>
+                    </div>
+                    <p class="project-description">Analyzed 10K+ sales records using SQL and Python, identifying top-selling artists and regions.</p>
+                    <div class="project-tech">
+                        <span>SQL</span>
+                        <span>Python</span>
+                        <span>Data Analysis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sohyla-said/Data-Analysis-for-online-music-store" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
             </div>
-            <div class="project">
-              <div class="project-name"><a href="https://github.com/sohyla-said/Quiz-app" target="_blank">Quiz app</a></div>
-              <img src="Images/Teacher_quizzes_page.png" alt="Quiz-app">
-              <div class="project-desc">Built a full-stack system for teachers to create, assign, and auto-evaluate quizzes. Implemented real-time quiz submission and result reporting.</div>
-            </div>
-          </div>
-          <!-- Backend Projects -->
-          <div class="project-list d-none" data-category="backend">
-            <div class="project">
-              <div class="project-name"><a href="https://github.com/sohyla-said/Appointment-Booking-Backend-system" target="_blank">Appointment Booking System</a></div>
-              <img src="Images/AppointmentBooking.png" alt="Appointment-Booking-System">
-              <div class="project-desc">Developed backend scheduling logic enabling real-time appointment booking with optimized availability tracking. Designed REST APIs for integration with front-end services, supporting concurrent bookings.</div>
-            </div>
-            <div class="project">
-              <div class="project-name"><a href="https://github.com/Salmamohamedd/lms" target="_blank">Learning Management System</a></div>
-              <img src="Images/LearningManagement.png" alt="Learning-Management-system">
-              <div class="project-desc">Designed and implemented backend logic for course management and student enrollment. Integrated role-based access control for administrators, teachers, and students.</div>
-            </div>
-            <div class="project">
-              <div class="project-name"><a href="https://github.com/sohyla-said/Task-Tracker-php" target="_blank">Task Tracker System</a></div>
-              <img src="Images/Task_Tracker.png" alt="Task-Tracker-system">
-              <div class="project-desc">Developed command-line Task Tracker that allows users to add, update, delete, mark, and list tasks. Task data is saved persistently in a local tasks.json file.</div>
-            </div>
-            <div class="project">
-              <div class="project-name"><a href="https://github.com/sohyla-said/Expense_Tracker" target="_blank">Expense Tracker System</a></div>
-              <img src="Images/Expense_Tracker.png" alt="Expense-Tracker-system">
-              <div class="project-desc">Built command-line application to help manage personal finances. Allowing users to add, update, delete, view, filter, summarize, and export expenses with monthly budget tracking.</div>
-            </div>
-          </div>
-          <!-- Data Analytics Projects -->
-          <div class="project-list d-none" data-category="data">
-            <div class="project">
-              <div class="project-name"><a href="https://github.com/sohyla-said/Data-Analysis-for-online-music-store" target="_blank">Music Store Data</a></div>
-              <img src="Images/Music_store.png" alt="Analyzing-Motorcycle-Part-Sales">
-              <div class="project-desc">Analyzed music sales data using Python and SQL, identifying top-performing genres and customer purchasing patterns. Generated data visualizations and business insights to support strategic decision-making for inventory and marketing.</div>
-            </div>
-            <div class="project">
-              <div class="project-name"><a href="https://github.com/sohyla-said/SMS-Spam-Classifier" target="_blank">SMS Spam Classifier</a></div>
-              <img src="Images/Spam_Classifier.png" alt="Investigating-Netflix-Movies">
-              <div class="project-desc"> Developed an NLP pipeline and ML model achieving 98% accuracy in classifying SMS messages as spam or ham using.</div>
-            </div>
-            <div class="project">
-              <div class="project-name"><a href="https://github.com/sohyla-said/IMDB-Movies-Reviews-Sentiment-Analysis" target="_blank"> Movie Review Sentiment Analysis</a></div>
-              <img src="Images/Sentiment_analyzer.png" alt="Investigating-Netflix-Movies">
-              <div class="project-desc"> Implemented sentiment classifier achieving 88% test accuracy on IMDB dataset. Preprocessed 50K reviews with NLTK, Tokenization, and TF-IDF vectorizer.</div>
-            </div>
-            <div class="project">
-              <div class="project-name"><a href="https://www.datacamp.com/datalab/w/1ede4558-6084-4744-b615-01a802991b88/edit" target="_blank">Credit Card Approval Automation</a></div>
-              <img src="Images/credit_card_approval.png" alt="Uncovering-the-World's-Oldest-Businesses">
-              <div class="project-desc">Built a predictive model to automate bank credit card approvals using Logistic Regression. Preprocessed financial data by handling missing values and encoding categorical variables. Achieved 88% accuracy in predicting application outcomes, demonstrating potential for reducing manual review workload.</div>
-            </div>
-          </div>
-          <!-- Front-End Projects -->
-          <div class="project-list d-none" data-category="frontend">
-            <div class="project">
-              <div class="project-name"><a href="https://github.com/sohyla-said/CodeAlpha_Todo-List" target="_blank">Todo List.</a></div>
-              <img src="Images/TodoList.png" alt="Todolist">
-              <div class="project-desc">A simple and interactive to-do list web app. Allows users to add, edit, delete, and mark tasks as completed with a clean, responsive UI.</div>
-            </div>
-            <div class="project">
-              <div class="project-name"><a href="https://github.com/sohyla-said/CodeAlpha_Age_Calculator" target="_blank">Age Calculator.</a></div>
-              <img src="Images/AgeCalc.png" alt="AgeCalc">
-              <div class="project-desc">A front-end age calculator tool. Users can input their birth date to instantly calculate and display their age in years, months, and days.</div>
-            </div>
-            <div class="project">
-              <div class="project-name"><a href="https://github.com/sohyla-said/Music-player/tree/main" target="_blank">Music Player</a></div>
-              <img src="Images/MusicPlayer.png" alt="MusicPlayer">
-              <div class="project-desc">A stylish music player web app. Features play, pause, skip, and playlist management with a modern, responsive design.</div>
-            </div>
-          </div>
         </div>
-        <a href="https://github.com/sohyla-said" target="_blank" id="show-projects" class="btn text-primary-emphasis mt-4">
-          Show all
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
-          </svg>
-        </a>
-      </div>
     </section>
-    <section id="contact">
-        <div class="container px-4 py-5 text-primary-emphasis" id="hanging-icons">
-            <h2 class="pb-2 border-bottom"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
-                <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-                <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
-              </svg>Let's work together.</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-md-3 row-cols-lg-5">
-              <div class="col d-flex align-items-start col-lg-2">
-                <div class="icon-square text-primary-emphasis bg-body-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                      </svg>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card card">
+                        <h3><i class="fas fa-envelope"></i> Email</h3>
+                        <p>sohylasaid2004@gmail.com</p>
+                    </div>
+                    <div class="contact-card card">
+                        <h3><i class="fas fa-phone"></i> Phone</h3>
+                        <p>+20 111 566 6637</p>
+                    </div>
+                    <div class="contact-card card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                        <p>Cairo, Egypt</p>
+                    </div>
                 </div>
-                <div>
-                  <a href="https://github.com/sohyla-said" class="btn btn-outline-secondary btn-lg" target="_blank">
-                    GitHub
-                  </a>
+                
+                <div class="contact-form-container card">
+                    <h3>Send me a message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
                 </div>
-              </div>
-              <div class="col d-flex align-items-start col-lg-2">
-                <div class="icon-square text-primary-emphasis bg-body-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                      </svg>
-                </div>
-                <div>
-                  <a href="https://www.linkedin.com/in/sohyla-saeed/" class="btn btn-outline-secondary btn-lg" target="_blank">
-                    Linkedin
-                  </a>
-                </div>
-              </div>
-              <div class="col d-flex align-items-start col-lg-4">
-                <div class="icon-square text-primary-emphasis bg-body-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-inbox" viewBox="0 0 16 16">
-                        <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z"/>
-                      </svg>
-                </div>
-                <div>
-                  <a href="mailto:sohylasaid2004@gmail.com" class="btn btn-outline-secondary btn-lg">
-                    sohylasaid2004@gmail.com
-                  </a>
-                </div>
-              </div>
-              <div class="col d-flex align-items-start">
-                <div class="icon-square text-primary-emphasis bg-body-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-                  </svg>
-                </div>
-                <a href="tel:+201115666637" class="btn btn-outline-secondary btn-lg w-100">
-                  +201115666637
-                </a>
-              </div>
-              <div class="col d-flex align-items-start">
-                <div class="icon-square text-primary-emphasis bg-body-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-                    <path d="M8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5z"/>
-                    <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6.5L14 4.5zm-3.5-.5V2H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V5h-3.5a1 1 0 0 1-1-1z"/>
-                  </svg>
-                </div>
-                <a href="Sohyla_Saeed_CV.pdf" target="_blank" class="btn btn-outline-secondary btn-lg w-100">
-                  Get my CV
-                </a>
-              </div>
             </div>
-            </div>
-          </div>
+        </div>
     </section>
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <span class="mb-3 mb-md-0 text-primary-emphasis">© 2024 Sohyla-Said</span>
-          </div>
-        </footer>
-      </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <script src="script.js"></script>
-  </body>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Sohyla<span>Saeed</span></a>
+                    <p>Data Scientist & Software Engineer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/sohyla-saeed" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/sohyla-said" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://sohyla-said.github.io/Portfolio2" target="_blank"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Sohyla Saeed. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

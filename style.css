@@ -862,11 +862,11 @@ body {
 }
 
 /* Contact Section */
-.contact-content {
+/* .contact-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 3rem;
-}
+} */
 
 .contact-info {
     display: flex;

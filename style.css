@@ -868,6 +868,236 @@ body {
     gap: 3rem;
 } */
 
+/* Graduation Project Highlight Styles */
+/* Graduation Project Highlight Styles - Updated with site colors */
+.graduation-project-highlight {
+    margin-bottom: 4rem;
+}
+
+.gp-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+}
+
+.gp-badge i {
+    font-size: 1.1rem;
+}
+
+.gp-card {
+    background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+    border: 2px solid var(--primary-color);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.gp-card::before {
+    content: '★';
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    font-size: 120px;
+    color: rgba(79, 70, 229, 0.08);
+    transform: rotate(15deg);
+}
+
+.gp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gp-title-section h3 {
+    font-size: 2rem;
+    color: var(--dark-color);
+    margin-bottom: 0.3rem;
+}
+
+.gp-title-section h3 i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.gp-tag {
+    display: inline-block;
+    background-color: rgba(79, 70, 229, 0.1);
+    color: var(--primary-color);
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.gp-year {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 0.3rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.gp-description {
+    margin-bottom: 2rem;
+}
+
+.gp-description p {
+    font-size: 1.1rem;
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+.gp-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.gp-detail-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.gp-detail-item:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.gp-detail-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    min-width: 40px;
+    text-align: center;
+    padding-top: 0.2rem;
+}
+
+.gp-detail-content h4 {
+    font-size: 1rem;
+    color: var(--dark-color);
+    margin-bottom: 0.3rem;
+}
+
+.gp-detail-content p {
+    font-size: 0.95rem;
+    color: var(--gray-color);
+    margin: 0;
+}
+
+.gp-detail-content p strong {
+    color: var(--dark-color);
+}
+
+.gp-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.gp-tech-stack span {
+    background-color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--dark-color);
+    border: 1px solid var(--gray-light);
+    transition: var(--transition);
+}
+
+.gp-tech-stack span:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.gp-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.gp-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Grid card version */
+.gp-grid-card {
+    border: 2px solid var(--primary-color);
+    position: relative;
+    background: linear-gradient(135deg, #f8faff, #eef2ff);
+}
+
+.gp-grid-card .gp-tag,
+.gp-grid-card .project-tag.gp-tag {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.gp-grid-card .project-header h3 {
+    color: var(--primary-color);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .gp-card {
+        padding: 1.5rem;
+    }
+    
+    .gp-title-section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .gp-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .gp-details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gp-detail-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .gp-actions {
+        flex-direction: column;
+    }
+    
+    .gp-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -1115,6 +1345,37 @@ body {
         font-size: 0.85rem;
         padding: 0.4rem 0.8rem;
     }
+        .gp-card {
+        padding: 1.5rem;
+    }
+    
+    .gp-title-section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .gp-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .gp-details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gp-detail-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .gp-actions {
+        flex-direction: column;
+    }
+    
+    .gp-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1148,5 +1409,18 @@ body {
     
     .timeline-item::before {
         left: 15px;
+    }
+
+    .gp-card {
+        padding: 1rem;
+    }
+    
+    .gp-title-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .gp-year {
+        font-size: 0.8rem;
+        padding: 0.2rem 1rem;
     }
 }

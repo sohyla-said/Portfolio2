@@ -233,6 +233,8 @@
                         <span class="skill-tag">PostgreSQL</span>
                         <span class="skill-tag">MySQL</span>
                         <span class="skill-tag">Oracle 19c</span>
+                        <span class="skill-tag">NoSQL</span>
+                        <span class="skill-tag">Spark</span>
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">GitHub</span>
                     </div>
@@ -245,6 +247,8 @@
                         <span class="skill-tag">NLP</span>
                         <span class="skill-tag">Data Visualization</span>
                         <span class="skill-tag">Feature Engineering</span>
+                        <span class="skill-tag">Data Warehousing</span>
+                        <span class="skill-tag">Big Data</span>
                         <span class="skill-tag">OOP</span>
                         <span class="skill-tag">Data Structures</span>
                         <span class="skill-tag">Algorithms</span>
@@ -356,6 +360,84 @@
     <section id="projects" class="section projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
+            
+            <!-- Graduation Project Highlight -->
+            <div class="graduation-project-highlight">
+                <div class="gp-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Graduation Project</span>
+                </div>
+                <div class="gp-card card">
+                    <div class="gp-header">
+                        <div class="gp-title-section">
+                            <h3>Talk2System</h3>
+                            <span class="gp-tag">AI-Powered Requirements Engineering Platform</span>
+                        </div>
+                        <div class="gp-year">2025 – 2026</div>
+                    </div>
+                    
+                    <div class="gp-description">
+                        <p>Built a full-stack AI-driven platform that automates the software development lifecycle from raw stakeholder conversations to production-ready deliverables.</p>
+                    </div>
+                    
+                    <div class="gp-details-grid">
+                        <div class="gp-detail-item">
+                            <div class="gp-detail-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="gp-detail-content">
+                                <h4>NLP & ML</h4>
+                                <p>Engineered NLP preprocessing pipeline for transcript cleaning, semantic deduplication, and requirement extraction. Designed ML classifiers for sentence-level multi-class classification achieving <strong>96% accuracy</strong>.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="gp-detail-item">
+                            <div class="gp-detail-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="gp-detail-content">
+                                <h4>LLM Integration</h4>
+                                <p>Implemented scalable LLM processing with adaptive chunking and fallback orchestration using <strong>Ollama (Qwen 7B)</strong> and <strong>Google Gemini APIs</strong> to support transcripts exceeding 80K words.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="gp-detail-item">
+                            <div class="gp-detail-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div class="gp-detail-content">
+                                <h4>Full-Stack Development</h4>
+                                <p>Developed async background processing, role-aware dashboards, and requirement approval/versioning workflows.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="gp-detail-item">
+                            <div class="gp-detail-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="gp-detail-content">
+                                <h4>Tech Stack</h4>
+                                <div class="gp-tech-stack">
+                                    <span>FastAPI</span>
+                                    <span>PostgreSQL</span>
+                                    <span>scikit-learn</span>
+                                    <span>spaCy</span>
+                                    <span>FastCoref</span>
+                                    <span>Ollama</span>
+                                    <span>Gemini API</span>
+                                    <span>React</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/sohyla-said/Talk2System-GP" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projects Filter -->
             <div class="projects-filter">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
                 <button class="filter-btn" data-filter="data-science">Data Science</button>
@@ -364,48 +446,66 @@
                 <button class="filter-btn" data-filter="backend">Backend</button>
             </div>
             
-            <div class="projects-grid">
-                <!-- Data Science Projects -->
+            <div class="projects-grid">           
+                
+                <!-- Other Projects -->
+                <div class="project-card card" data-category="data-science">
+                    <div class="project-header">
+                        <h3>Credit Risk Prediction System</h3>
+                        <span class="project-tag">Data Science</span>
+                    </div>
+                    <p class="project-description">Built end-to-end credit risk pipeline achieving 0.854 AUC with XGBoost, MLflow tracking, Airflow orchestration, and Evidently AI drift monitoring.</p>
+                    <div class="project-tech">
+                        <span>XGBoost</span>
+                        <span>MLflow</span>
+                        <span>Airflow</span>
+                        <span>FastAPI</span>
+                        <span>Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sohyla-said/Credit-Risk-Prediction-system" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                
                 <div class="project-card card" data-category="data-science">
                     <div class="project-header">
                         <h3>Sales Forecasting and Optimization</h3>
                         <span class="project-tag">Team Project</span>
                     </div>
-                    <p class="project-description">Forecasted weekly sales for retail stores using time-series models XGBoost, LightGBM, LSTM, achieving 98% accuracy.</p>
+                    <p class="project-description">Built and compared XGBoost, LightGBM, and LSTM forecasting models on retail sales data, achieving 98% accuracy.</p>
                     <div class="project-tech">
                         <span>Python</span>
                         <span>XGBoost</span>
                         <span>LSTM</span>
-                        <span>EDA</span>
+                        <span>Docker</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/sohyla-said/Sales_Forecasting_and_Optimization_GP" class="project-link"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
+                
                 <div class="project-card card" data-category="data-science">
                     <div class="project-header">
                         <h3>Netflix Show Clustering</h3>
                         <span class="project-tag">Data Science</span>
                     </div>
-                    <p class="project-description">Developed a Netflix show clustering and recommendation system using Kmenas clustering to group shows by similarity.</p>
+                    <p class="project-description">Built a recommendation system using unsupervised learning and KMeans clustering with Streamlit web app.</p>
                     <div class="project-tech">
                         <span>Python</span>
                         <span>KMeans</span>
-                        <span>Feature Engineering</span>
-                        <span>EDA</span>
+                        <span>Streamlit</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/sohyla-said/Netflix-Show-Clustering" class="project-link"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
                 
-                <!-- Machine Learning Projects -->
                 <div class="project-card card" data-category="machine-learning">
                     <div class="project-header">
                         <h3>Material Stream Identification System</h3>
                         <span class="project-tag">Machine Learning</span>
                     </div>
-                    <p class="project-description">Developed an Automated Material Stream Identification System using ML techniques, achieving 89% accuracy with SVM.</p>
+                    <p class="project-description">Automated material stream identification system achieving 89% accuracy using SVM with data augmentation.</p>
                     <div class="project-tech">
                         <span>Python</span>
                         <span>SVM</span>
@@ -421,11 +521,11 @@
                         <h3>SMS Spam Classifier</h3>
                         <span class="project-tag">NLP</span>
                     </div>
-                    <p class="project-description">Developed an NLP pipeline and ML model achieving 98% accuracy in classifying SMS messages as spam or ham.</p>
+                    <p class="project-description">NLP-based spam detection system using TF-IDF and machine learning, achieving 98% accuracy with minimal false positives.</p>
                     <div class="project-tech">
                         <span>Python</span>
                         <span>NLP</span>
-                        <span>Machine Learning</span>
+                        <span>TF-IDF</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/sohyla-said/SMS-Spam-Classifier" class="project-link"><i class="fab fa-github"></i> GitHub</a>
@@ -437,7 +537,7 @@
                         <h3>IMDB Movie Review Sentiment Analysis</h3>
                         <span class="project-tag">NLP</span>
                     </div>
-                    <p class="project-description">Implemented sentiment classifier achieving 88% test accuracy on IMDB dataset. Preprocessed 50K reviews with NLTK.</p>
+                    <p class="project-description">Sentiment classifier achieving 88% test accuracy on IMDB dataset with 50K reviews preprocessing using NLTK.</p>
                     <div class="project-tech">
                         <span>Python</span>
                         <span>Deep Learning</span>
@@ -448,13 +548,12 @@
                     </div>
                 </div>
                 
-                <!-- Web Development Projects -->
                 <div class="project-card card" data-category="web-dev">
                     <div class="project-header">
                         <h3>Quiz Management System</h3>
                         <span class="project-tag">Full Stack</span>
                     </div>
-                    <p class="project-description">Developed a full-stack web application using Django, HTML, CSS, JS, and DRF enabling teachers to create timed quizzes.</p>
+                    <p class="project-description">Full-stack Django application enabling teachers to create timed quizzes with auto-evaluation and result reporting.</p>
                     <div class="project-tech">
                         <span>Django</span>
                         <span>HTML/CSS</span>
@@ -466,13 +565,12 @@
                     </div>
                 </div>
                 
-                <!-- Backend Projects -->
                 <div class="project-card card" data-category="backend">
                     <div class="project-header">
                         <h3>Learning Management System</h3>
                         <span class="project-tag">Backend</span>
                     </div>
-                    <p class="project-description">Collaborated with a team of 5 to develop core backend services for an educational platform using Java Spring Boot.</p>
+                    <p class="project-description">Core backend services for an educational platform using Java Spring Boot with assignments submission and grading.</p>
                     <div class="project-tech">
                         <span>Java</span>
                         <span>Spring Boot</span>
@@ -488,11 +586,10 @@
                         <h3>Smart Appointment Booking System</h3>
                         <span class="project-tag">Backend</span>
                     </div>
-                    <p class="project-description">Developed a Spring Boot and SQL backend for an intelligent scheduling system that optimizes appointment booking.</p>
+                    <p class="project-description">Spring Boot and SQL backend for an intelligent scheduling system optimizing appointment booking with real-time data.</p>
                     <div class="project-tech">
                         <span>Spring Boot</span>
                         <span>SQL</span>
-                        <span>Real-time Data</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/sohyla-said/Appointment-Booking-Backend-system" class="project-link"><i class="fab fa-github"></i> GitHub</a>
@@ -504,7 +601,7 @@
                         <h3>Event Booking System</h3>
                         <span class="project-tag">Full Stack</span>
                     </div>
-                    <p class="project-description">Built a full-stack web app for browsing, booking, and managing events with an integrated admin panel.</p>
+                    <p class="project-description">Full-stack web app for browsing, booking, and managing events with an integrated admin panel using Django.</p>
                     <div class="project-tech">
                         <span>Django</span>
                         <span>HTML/CSS</span>
@@ -520,7 +617,7 @@
                         <h3>Music Store Data Analysis</h3>
                         <span class="project-tag">Data Analysis</span>
                     </div>
-                    <p class="project-description">Analyzed 10K+ sales records using SQL and Python, identifying top-selling artists and regions.</p>
+                    <p class="project-description">Analyzed 10K+ sales records using SQL and Python, identifying top-selling artists and regions with actionable insights.</p>
                     <div class="project-tech">
                         <span>SQL</span>
                         <span>Python</span>
